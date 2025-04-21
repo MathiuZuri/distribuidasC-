@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ms-config-server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a2c1a57fb3b22d9fe3253f921e1bfe989f097e43")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+707416bf34152053a67a7a96d144140f097ac01e")]
 [assembly: System.Reflection.AssemblyProductAttribute("ms-config-server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ms-config-server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
