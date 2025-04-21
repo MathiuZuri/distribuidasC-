@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "rH0HHwJGqYtGm1xDix1xk09OGNzJzAeI7bPe6QrcWOA=",
+  "Source": "ms-config-server",
+  "BasePath": "_content/ms-config-server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

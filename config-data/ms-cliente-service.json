@@ -11,22 +11,10 @@
   },
   "Swagger": {
     "Enabled": true,
-    "RoutePrefix": "swagger" 
+    "RoutePrefix": "git-swagger"
   },
   "ServiceSettings": {
-    "ServiceName": "ms-cliente-service" 
+    "ServiceName": "ms-cliente-service-dev"
   },
-  "Spring": {
-    "Application": {
-      "Name": "ms-cliente-service" 
-    },
-    "Profiles": {
-      "Active": "development" 
-    },
-    "Config": {
-      "Import": {
-        "Configserver": "http://localhost:7070" 
-      }
-    }
-  }
+  "CustomSetting": "Valor específico para desarrollo"
 }
