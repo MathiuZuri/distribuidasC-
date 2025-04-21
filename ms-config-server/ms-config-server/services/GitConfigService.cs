@@ -43,9 +43,17 @@ namespace MsConfigService.Services
 
         public string GetConfiguration(string applicationName, string profile)
         {
-            string searchPath = _gitSettings.SearchPaths?.FirstOrDefault() ?? "";
+            string searchPath = _gitSettings.SearchPaths?.FirstOrDefault() ?? "config-data"; // Asegúrate de que el searchPath sea "config-data"
             string label = profile ?? _gitSettings.DefaultLabel ?? "main";
-            string filePath = Path.Combine(_localRepoPath, searchPath, applicationName, $"{profile}.json");
+            string filePath = Path.Combine(_localRepoPath, searchPath, $"{applicationName}-{profile}.json"); // Ejemplo 2 // Asumiendo un archivo por aplicación
+
+            Console.WriteLine($"_localRepoPath: {_localRepoPath}");
+            Console.WriteLine($"searchPath: {searchPath}");
+            Console.WriteLine($"applicationName: {applicationName}");
+            Console.WriteLine($"profile: {profile}");
+            Console.WriteLine($"filePath: {filePath}");
+            // Otra opción si quieres manejar perfiles en el nombre del archivo:
+            // string filePath = Path.Combine(_localRepoPath, searchPath, $"{applicationName}-{profile}.json");
 
             try
             {
