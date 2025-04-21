@@ -1,0 +1,32 @@
+﻿{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=localhost;Port=3306;Database=ms_cliente_db;Uid=root;Pwd=;"
+  },
+  "Swagger": {
+    "Enabled": true,
+    "RoutePrefix": "swagger" 
+  },
+  "ServiceSettings": {
+    "ServiceName": "ms-cliente-service" 
+  },
+  "Spring": {
+    "Application": {
+      "Name": "ms-cliente-service" 
+    },
+    "Profiles": {
+      "Active": "development" 
+    },
+    "Config": {
+      "Import": {
+        "Configserver": "http://localhost:7070" 
+      }
+    }
+  }
+}
